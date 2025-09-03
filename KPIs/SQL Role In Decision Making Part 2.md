@@ -8,7 +8,7 @@ SELECT user_id, DATE_TRUNC('month', signup_date) AS cohort_month
 FROM users;
 ```
 
-**8. Building Signup Cohorts**
+**6. Building Signup Cohorts**
 
 ```sql
 WITH cohorts AS (
@@ -21,7 +21,7 @@ GROUP BY cohort_month
 ORDER BY cohort_month;
 ```
 
-**9. Tracking Activity Across Time Buckets**
+**7. Tracking Activity Across Time Buckets**
 
 ```sql
 WITH user_logins AS (
@@ -37,7 +37,7 @@ GROUP BY cohort, active_month
 ORDER BY cohort, active_month;
 ```
 
-**10. Cohort Retention Matrix (Week 0 to Week N)**
+**8. Cohort Retention Matrix (Week 0 to Week N)**
 
 ```sql
 WITH base AS (
@@ -58,7 +58,7 @@ GROUP BY cohort_week, week_number
 ORDER BY cohort_week, week_number;
 ```
 
-**11. SQL Techniques for LTV (Lifetime Value)**
+**9. SQL Techniques for LTV (Lifetime Value)**
 
 ```sql
 SELECT customer_id, SUM(order_total) AS ltv
