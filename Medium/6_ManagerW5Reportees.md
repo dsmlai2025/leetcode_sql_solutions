@@ -1,4 +1,4 @@
-# Problem 06 - Manager with 5 reportees
+# Problem 06 - Manager with 5 reportees (Leet Code)
 
 ---
 
