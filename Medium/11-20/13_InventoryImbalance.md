@@ -15,19 +15,17 @@ The result format is in the following example.
 **Table:** 
 
 stores table:
-+----------+----------------+-------------+
 | store_id | store_name     | location    |
-+----------+----------------+-------------+
+|----------|----------------|-------------|
 | 1        | Downtown Tech  | New York    |
 | 2        | Suburb Mall    | Chicago     |
 | 3        | City Center    | Los Angeles |
 | 4        | Corner Shop    | Miami       |
 | 5        | Plaza Store    | Seattle     |
-+----------+----------------+-------------+
+
 inventory table:
-+--------------+----------+--------------+----------+--------+
 | inventory_id | store_id | product_name | quantity | price  |
-+--------------+----------+--------------+----------+--------+
+|--------------|----------|--------------|----------|--------|
 | 1            | 1        | Laptop       | 5        | 999.99 |
 | 2            | 1        | Mouse        | 50       | 19.99  |
 | 3            | 1        | Keyboard     | 25       | 79.99  |
@@ -43,29 +41,17 @@ inventory table:
 | 13           | 4        | Band         | 25       | 49.99  |
 | 14           | 5        | Camera       | 8        | 599.99 |
 | 15           | 5        | Lens         | 12       | 199.99 |
-+--------------+----------+--------------+----------+--------+
+
 ## 🧪 Example
 
 **Output**
-+----------+----------------+-------------+------------------+--------------------+------------------+
 | store_id | store_name     | location    | most_exp_product | cheapest_product   | imbalance_ratio  |
-+----------+----------------+-------------+------------------+--------------------+------------------+
+|----------|----------------|-------------|------------------|--------------------|------------------|
 | 3        | City Center    | Los Angeles | Tablet           | Stylus             | 40.00            |
 | 1        | Downtown Tech  | New York    | Laptop           | Mouse              | 10.00            |
 | 2        | Suburb Mall    | Chicago     | Phone            | Case               | 25.00            |
-+----------+----------------+-------------+------------------+--------------------+------------------+
+
 ---
-Explanation: The folowing table is ordered by the turn for simplicity.
-+------+----+-----------+--------+--------------+
-| Turn | ID | Name      | Weight | Total Weight |
-+------+----+-----------+--------+--------------+
-| 1    | 5  | Alice     | 250    | 250          |
-| 2    | 3  | Alex      | 350    | 600          |
-| 3    | 6  | John Cena | 400    | 1000         | (last person to board)
-| 4    | 2  | Marie     | 200    | 1200         | (cannot board)
-| 5    | 4  | Bob       | 175    | ___          |
-| 6    | 1  | Winston   | 500    | ___          |
-+------+----+-----------+--------+--------------+
 
 ## 💡 Approach
 
