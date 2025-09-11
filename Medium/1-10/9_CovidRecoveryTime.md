@@ -1,4 +1,4 @@
-# Problem 9 - Score Improvement
+# Problem 9 - Covide Recovery Time
 
 ## 📄 Problem Statement
 Write a solution to find patients who have recovered from COVID - patients who tested positive but later tested negative.
