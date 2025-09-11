@@ -1,4 +1,4 @@
-# Problem 04 - Highest Salary in each department
+# Problem 04 - Highest Salary in each department (Leet Code)
 
 ---
 
