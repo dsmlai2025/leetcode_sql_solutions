@@ -1,4 +1,4 @@
-# Problem 03 - Consecutive Numbers
+# Problem 03 - Consecutive Numbers (Leet Code)
 
 ---
 
